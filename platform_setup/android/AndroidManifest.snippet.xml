@@ -1,0 +1,20 @@
+<!-- Mesclar estas permissões e o receiver no AndroidManifest.xml gerado pelo Flutter. -->
+<uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+<!-- Dentro de <application> -->
+<receiver
+    android:name=".VitaHomeWidgetProvider"
+    android:exported="true"
+    android:label="V.I.T.A. · Medições">
+    <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    </intent-filter>
+    <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/vita_home_widget_info" />
+</receiver>

@@ -1,0 +1,5 @@
+<!-- Adicionar ao Info.plist do Runner -->
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>O V.I.T.A. usa Bluetooth para localizar e receber medições do dispositivo ESP32.</string>
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>O V.I.T.A. usa Bluetooth para se comunicar com o dispositivo de monitoramento.</string>

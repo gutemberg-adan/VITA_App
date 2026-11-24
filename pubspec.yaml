@@ -1,0 +1,29 @@
+name: vita_app
+description: Aplicativo multiplataforma V.I.T.A. de monitoramento demonstrativo de sinais vitais.
+publish_to: 'none'
+version: 0.1.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.69.2
+  shared_preferences: ^2.3.3
+  intl: ^0.19.0
+  pdf: ^3.11.1
+  printing: ^5.13.4
+  share_plus: ^10.1.2
+  path_provider: ^2.1.5
+  flutter_local_notifications: ^18.0.1
+  url_launcher: ^6.3.1
+  flutter_blue_plus: ^1.35.5
+  permission_handler: ^11.3.1
+  device_info_plus: ^11.2.0
+  home_widget: ^0.7.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true
